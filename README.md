@@ -8,10 +8,11 @@ Ce projet vise à prédire la présence ou le stade de la maladie d'Alzheimer à
 
 ```mermaid
 graph TD
-    A[Interface Web (HTML/CSS/Bootstrap)] --> B[Backend Python (Flask )]
-    B --> C[Modèle ML Entraîné (joblib)]
-    B --> D[Base de données Oracle]
+    A[Interface Web: HTML/CSS/Bootstrap] --> B[Backend Python: Flask]
+    B --> C[Modèle ML entraîné (joblib/pickle)]
+    B --> D[Base Oracle]
     D --> E[Power BI]
+
 Frontend : Formulaire web pour que l'utilisateur saisisse ses données
 
 Backend : Reçoit les données, prédit avec le modèle ML, enregistre dans Oracle
