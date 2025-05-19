@@ -12,6 +12,7 @@ graph TD
     B --> C[Modele ML entraine - joblib ou pickle]
     B --> D[Base Oracle]
     D --> E[Power BI]
+ ``` 
 
 Frontend : Formulaire web pour que l'utilisateur saisisse ses donnees
 Backend : Recoit les donnees, predit avec le modele ML, enregistre dans Oracle
