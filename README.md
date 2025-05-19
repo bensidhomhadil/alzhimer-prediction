@@ -8,18 +8,14 @@ Ce projet vise à prédire la présence ou le stade de la maladie d'Alzheimer à
 
 ```mermaid
 graph TD
-    A[Interface Web: HTML - CSS - Bootstrap] --> B[Backend Python: Flask]
+    A[Interface Web - HTML/CSS/Bootstrap] --> B[Backend Python - Flask]
     B --> C[Modele ML entraine - joblib ou pickle]
-    B --> D[Base de donnees Oracle]
+    B --> D[Base Oracle]
     D --> E[Power BI]
-
-Frontend : Formulaire web pour que l'utilisateur saisisse ses données
-
-Backend : Reçoit les données, prédit avec le modèle ML, enregistre dans Oracle
-
-Base Oracle : Stocke les entrées utilisateurs et les prédictions
-
-Power BI : Se connecte à Oracle pour créer des dashboards dynamiques
+Frontend : Formulaire web pour que l'utilisateur saisisse ses donnees
+Backend : Recoit les donnees, predit avec le modele ML, enregistre dans Oracle
+Base Oracle : Stocke les entrees utilisateurs et les predictions
+Power BI : Se connecte a Oracle pour creer des dashboards dynamiques
 
 🛠️ Technologies utilisées
 Python, Scikit-learn, XGBoost – Machine Learning
@@ -61,12 +57,12 @@ Modélisation
 Déploiement
 
 📊 Résultats obtenus
-Accuracy : 92.3%
+Accuracy : 92.3 %
 
-F1-score : 91.8%
+F1-score : 91.8 %
 
 AUC-ROC : 0.95
-
+(Évalué avec un dataset externe)
 
 🗂️ Structure du projet
 bash
@@ -101,13 +97,13 @@ Copier
 Modifier
 python app.py
 4. Visualisation Power BI
-Ouvre le fichier Power BI powerbi/dashboard.pbix.
+Ouvre le fichier Power BI powerbi/dashboard.pbix
 
-Connecte-toi à ta base Oracle.
+Connecte-toi à ta base Oracle
 
-Rafraîchis les données pour visualiser les résultats actuels.
+Rafraîchis les données pour visualiser les résultats actuels
 
 📚 Source des données
 Dataset d'entraînement : Kaggle Alzheimer Dataset
 
-Le modèle a été entièrement entraîné par mes soins.
+Le modèle a été entièrement entraîné par mes soins
