@@ -8,9 +8,9 @@ Ce projet vise à prédire la présence ou le stade de la maladie d'Alzheimer à
 
 ```mermaid
 graph TD
-    A[Interface Web: HTML/CSS/Bootstrap] --> B[Backend Python: Flask]
-    B --> C[Modèle ML entraîné (joblib/pickle)]
-    B --> D[Base Oracle]
+    A[Interface Web: HTML - CSS - Bootstrap] --> B[Backend Python: Flask]
+    B --> C[Modele ML entraine - joblib ou pickle]
+    B --> D[Base de donnees Oracle]
     D --> E[Power BI]
 
 Frontend : Formulaire web pour que l'utilisateur saisisse ses données
